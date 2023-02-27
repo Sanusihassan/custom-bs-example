@@ -1,0 +1,70 @@
+@import "../node_modules/cssmolecule/main.scss";
+@import "../node_modules/custom-bs/scss/bootstrap";
+
+@include root;
+@include reboot;
+@include api;
+@include card;
+@include grid;
+@include buttons;
+@include containers;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    @include extend("container");
+}
+
+.row {
+    @include extend("row");
+    justify-content: space-between;
+}
+
+.card {
+    @include extend("card col-3");
+
+    img {
+        @include extend("card-img-top img-fluid");
+    }
+
+    div {
+        @include extend("card-body");
+    }
+
+    h5 {
+        @include extend("card-title");
+    }
+
+    p {
+        @include extend("card-text");
+    }
+
+    a {
+        @include extend("btn btn-primary");
+        // customize without using !important
+        background-color: black;
+    }
+}
